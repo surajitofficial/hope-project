@@ -1,0 +1,22 @@
+.ant-drawer-header
+{
+    background: linear-gradient(45deg,#F5F7FA,rgb(10,191,188));
+}
+.ant-drawer-title
+{
+    font-weight: bold;
+}
+.ant-form-vertical .ant-form-item-label, .ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label
+{
+    padding-bottom: 0;
+}
+.ant-form-item
+{
+    margin-bottom: 10px;
+}
+.ant-table.ant-table-small .ant-table-title, .ant-table.ant-table-small .ant-table-footer, .ant-table.ant-table-small .ant-table-thead > tr > th, .ant-table.ant-table-small .ant-table-tbody > tr > td, .ant-table.ant-table-small tfoot > tr > th, .ant-table.ant-table-small tfoot > tr > td
+{
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

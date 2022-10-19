@@ -1,0 +1,1 @@
+export const tableHeight = 'calc(100vh - 219px)';

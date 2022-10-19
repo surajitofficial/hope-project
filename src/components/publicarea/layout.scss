@@ -1,0 +1,2532 @@
+.mainbody {
+  font-family: "proxima_nova_rgregular";
+  font-size: 14px;
+  color: #000;
+  overflow-x: hidden;
+
+  .headerContainer.fixed-header {
+    background: #f0584b;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+  }
+  .headerContainer.fixed-header .searchLang {
+    display: none;
+  }
+  .headerContainer.fixed-header .navbar-default {
+    padding-top: 10px;
+  }
+  .headerContainer .headerthinStrip {
+    display: block;
+    color: #fff;
+  }
+
+  .fix-header {
+    background: #fff;
+    color: #242424;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+    font-family: "proxima_nova_rgregular";
+  }
+  a:hover {
+    text-decoration: none !important;
+    color: #3b9cee;
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    line-height: 30px;
+    padding: 0 0 1.3em;
+  }
+  img {
+    border: none;
+  }
+  a img {
+    border: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "proxima_nova_rgregular";
+  }
+
+  form {
+    display: inline;
+  }
+  fieldset {
+    border: 0;
+  }
+  legend {
+    display: none;
+  }
+
+  /* Table */
+  table {
+    border: 0; /*border-collapse:collapse;*/
+    border-spacing: 0;
+    empty-cells: show;
+    font-size: 100%;
+  }
+  caption,
+  th,
+  td {
+    vertical-align: top;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  /* Content */
+  p {
+    margin: 0 0 10px;
+    font-family: "proxima_nova_rgregular";
+  }
+  strong {
+    font-weight: bold;
+  }
+  address {
+    font-style: normal;
+    line-height: 1.35;
+  }
+  cite {
+    font-style: normal;
+  }
+  q,
+  blockquote {
+    quotes: none;
+  }
+  q:before,
+  q:after {
+    content: "";
+  }
+  small,
+  big {
+    font-size: 1em;
+  }
+  /*sup           { font-size:1em; vertical-align:top; }*/
+
+  /* Lists */
+
+  ul,
+  ol {
+    list-style: none;
+    font-size: 14px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0;
+    margin-left: 0px;
+  }
+
+  /* Tools */
+  .hidden {
+    display: block !important;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  .nobr {
+    white-space: nowrap !important;
+  }
+  .wrap {
+    white-space: normal !important;
+  }
+  .a-left {
+    text-align: left !important;
+  }
+  .a-center {
+    text-align: center !important;
+  }
+  .a-right {
+    text-align: right !important;
+  }
+  .v-top {
+    vertical-align: top;
+  }
+  .v-middle {
+    vertical-align: middle;
+  }
+  .f-left,
+  .left {
+    float: left !important;
+  }
+  .f-right,
+  .right {
+    float: right !important;
+  }
+  .f-none {
+    float: none !important;
+  }
+  .f-fix {
+    float: left;
+    width: 100%;
+  }
+  .no-display {
+    display: none;
+  }
+  .no-margin {
+    margin: 0 !important;
+  }
+  .no-padding {
+    padding: 0 !important;
+  }
+  .no-bg {
+    background: none !important;
+  }
+  .clear {
+    clear: both;
+    display: block;
+  }
+  .clear40 {
+    clear: both;
+    height: 40px;
+    display: block;
+  }
+  .clear20 {
+    clear: both;
+    height: 20px;
+    display: block;
+  }
+
+  h4 {
+  }
+  .row {
+  }
+  .row .row {
+  }
+  [class*="col-"] {
+  }
+
+  hr {
+  }
+
+  .clear20 {
+    clear: both;
+    display: block;
+    height: 20px;
+  }
+
+  .headerStrip {
+    background: rgba(0, 71, 133, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    clear: both;
+    display: block;
+    z-index: 99999;
+  }
+  .headerStrip h1.logo {
+    padding-bottom: 5px;
+    text-align: left;
+    padding-top: 10px;
+  }
+  .headerStrip h5.topContact {
+    padding-top: 28px;
+    text-align: right;
+    color: #fff;
+    font-size: 30px;
+  }
+  .headerStrip h5.topContact span.thn {
+    font-family: "proxima_nova_ththin";
+    color: #fff;
+  }
+  .headerStrip h5.topContact span.bld {
+    font-family: "proxima_nova_rgbold";
+    color: #fff;
+  }
+
+  .alpBanner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .alpbannerImg {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+  }
+  .alpbannerOver {
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    padding-top: 70px;
+    background: rgba(0, 71, 133, 0.77);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .alpbannerImg img {
+    width: 100%;
+  }
+
+  .alpbOverLeft {
+    width: 62%;
+    float: left;
+    text-align: left;
+    padding-top: 70px;
+    background: url(/images/alp_bannerOverFrame.png) left top no-repeat;
+    height: 662px;
+  }
+  .alpbOverRight {
+    width: 38%;
+    float: left;
+    padding-top: 90px;
+    text-align: left;
+    position: relative;
+  }
+  .alpWhythis {
+    margin-top: 80px;
+  }
+  .alpWhythis h5 {
+    font-size: 18px;
+    color: #fff;
+    font-family: "proxima_nova_rgregular";
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .alpWhythis h5 span {
+    clear: both;
+    display: block;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+  }
+  .alpWhythis p {
+    font-size: 30px;
+    color: #fff;
+    font-family: "proxima_nova_ththin";
+    width: 80%;
+  }
+
+  .alpWhythis2 {
+    padding-left: 0px;
+    margin-top: 55px;
+  }
+  .alpWhythis2 p.p1 {
+    font-size: 24px;
+    color: #242424;
+    font-family: "proxima_nova_rgbold";
+    background: rgba(255, 255, 255, 0.7);
+    padding: 30px 0px;
+    padding-left: 160px;
+    text-transform: uppercase;
+  }
+  .alpWhythis2 p.p1 span {
+    font-size: 48px;
+    color: #007cc3;
+    font-family: "proxima_nova_rgbold";
+  }
+
+  .alprform {
+    width: 100%;
+    float: left;
+    background: rgba(1, 146, 226, 0.9);
+    color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    padding-bottom: 100px;
+  }
+  .alprform h4 {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .alprform p.ptext1 {
+    font-size: 12px;
+    color: #fff;
+    font-family: "proxima_nova_rgregular";
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .alprform p.ptext1 a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .alprform input[type="text"] {
+    /*background:#fff url(/images/alp_avatar.png) 93% center no-repeat; */
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
+    font-size: 14px;
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    padding-right: 20px;
+    width: 100%;
+    color: #242424;
+  }
+  .alprform input[type="password"] {
+    /*background:#fff url(/images/alp_email.png) 93% center no-repeat; */
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
+    font-size: 14px;
+    width: 85%;
+    display: block;
+    clear: both;
+    margin-top: 8px;
+    padding-right: 20px;
+    width: 100%;
+    color: #242424;
+  }
+  span.barrow {
+    height: 103px;
+    width: 103px;
+    background: url(/images/formTop.png) center no-repeat;
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 38%;
+  }
+
+  .alprform input[type="submit"] {
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 0,
+      from(#fbbd04),
+      to(#fb9704)
+    );
+    background-image: -webkit-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -moz-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -o-linear-gradient(top, #fbbd04, #fb9704);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 20px;
+  }
+  .formAction {
+    text-align: center;
+    line-height: 40px;
+  }
+  .formAction span {
+    clear: both;
+    display: block;
+  }
+  .formAction a {
+    color: #fff;
+  }
+
+  .alprform a.downloadBrochure {
+    color: #fff;
+    padding: 25px 0px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    width: 50%;
+    float: left;
+    border-radius: 0px 15px 15px 0px;
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 0,
+      from(#4c4c4a),
+      to(#171616)
+    );
+    background-image: -webkit-linear-gradient(top, #4c4c4a, #171616);
+    background-image: -moz-linear-gradient(top, #4c4c4a, #171616);
+    background-image: -o-linear-gradient(top, #4c4c4a, #171616);
+  }
+
+  span.editPen {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    clear: both;
+    display: block;
+    background: #fbc004 url(/images/alp_editPen.png) center no-repeat;
+    border-radius: 50%;
+    margin: -80px auto 0px;
+  }
+  .alprform h3.qq {
+    font-size: 30px;
+    color: #fff;
+    font-family: "proxima_nova_ththin";
+    text-align: center;
+  }
+  .alprform h3.qq span {
+    font-size: 30px;
+    color: #fff;
+    font-family: "proxima_nova_rgbold";
+    display: block;
+    clear: both;
+  }
+
+  .alp_intro {
+  }
+  .alp_intro h3 {
+    font-size: 32px;
+    color: #0192e2;
+    font-family: "Playfair Display", serif;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  .alp_intro p {
+    font-size: 16px;
+    color: #242424;
+    line-height: 24px;
+  }
+
+  ul.sitesGrid {
+  }
+  ul.sitesGrid li {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+  }
+  ul.sitesGrid::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  ul.sitesGrid li .sgImage {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+  }
+  ul.sitesGrid li .sgImage img {
+    width: 100%;
+    height: auto;
+  }
+  ul.sitesGrid li .sgOver {
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  ul.sitesGrid li:hover .sgOver {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  ul.sitesGrid li .sgOver_selected {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  ul.sitesGrid li:hover .sgoInr {
+    border: 1px solid #ffe400;
+  }
+  .siteStatus {
+    display: block;
+    clear: both;
+    height: 70px;
+    width: 63px;
+    position: absolute;
+    text-indent: -99999px;
+    top: -3px;
+    left: 0;
+    z-index: 999;
+  }
+  .siteStatus.fullFlag {
+    background: url(/images/full-flag.png);
+  }
+  .siteStatus.cancelFlag {
+    background: url(/images/cancel-flag.png);
+  }
+
+  .sgoInr {
+    border: 1px solid #fff;
+    padding: 5%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 92%;
+    height: 90%;
+  }
+
+  .sTitle {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+  }
+  .sTitle h4 {
+    font-size: 24px;
+    font-family: "proxima_nova_rgbold";
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .sTitle h5 {
+    font-size: 24px;
+    font-family: "proxima_nova_rgbold";
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: white;
+  }
+  .sMatr p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .alp_features {
+    text-align: center;
+    margin: 40px auto;
+    background: #ebebeb;
+    padding: 60px 0px 0px;
+  }
+  .alp_features h2 {
+    font-size: 48px;
+    color: #111;
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .alp_features h2 span {
+    display: block;
+    clear: both;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "proxima_nova_rgbold";
+    padding-top: 10px;
+  }
+  .alp_features p.ptext {
+    font-size: 18px;
+    color: #242424;
+    font-family: "proxima_nova_rgregular";
+    text-align: center;
+    margin-top: 20px;
+    line-height: 24px;
+  }
+  ul.alp_featuresList {
+    text-align: center;
+  }
+  ul.alp_featuresList li {
+    display: inline-block;
+    width: 20%;
+    float: left;
+  }
+  ul.alp_featuresList li .alpf_imageOuter {
+    border-radius: 50%;
+    padding: 10px;
+  }
+  ul.alp_featuresList li .alpf_imageInner {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+  }
+  ul.alp_featuresList li .alpf_imageInner img {
+    background: #0192e2;
+    border-radius: 50%;
+  }
+  ul.alp_featuresList li p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #242424;
+  }
+  ul.alp_featuresList li p span {
+    font-family: "proxima_nova_rgbold";
+    clear: both;
+    display: block;
+  }
+
+  .alp_features a.emore {
+    background: #0192e2;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 20px 30px;
+    border-radius: 6px 6px 0px 0px;
+    display: inline-block;
+    margin-top: 60px;
+  }
+
+  .alp_testimonials {
+    text-align: center;
+    margin: 40px auto;
+    padding: 60px 0px 0px;
+  }
+  .alp_testimonials h4 {
+    font-size: 48px;
+    color: #111;
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .alp_testimonials h4:before {
+    content: "''";
+    clear: both;
+    display: block;
+    color: #0192e2;
+    font-size: 90px;
+    line-height: 50px;
+  }
+  ul.testiSlider {
+  }
+  ul.testiSlider li p {
+    color: #747474;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  ul.testiSlider li .testiBy {
+  }
+  ul.testiSlider li .testiBy img {
+    border-radius: 50%;
+  }
+  ul.testiSlider li .testiBy span {
+    clear: both;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    color: #747474;
+    padding-top: 10px;
+  }
+
+  section.module.parallax {
+    height: 285px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .alp_ctaOverlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 285px;
+    z-index: 10;
+    padding: 30px 0px 40px;
+    text-align: center;
+  }
+
+  .alp_ctaOverlay p.ptext {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 42px;
+    padding: 30px 0px;
+    font-family: "proxima_nova_ththin";
+    font-size: 36px;
+    color: #fff;
+  }
+  .alp_ctaOverlay p.ptext span {
+    font-family: "proxima_nova_rgbold";
+  }
+  .alp_ctaOverlay a.becomeDealer {
+    font-family: "proxima_nova_ththin";
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid #fff;
+    background: none;
+    padding: 10px 20px;
+  }
+  .alp_ctaOverlay a.becomeDealer:hover {
+    background: #0b7bbb;
+    border: 1px solid #0b7bbb;
+  }
+
+  .alp_ctaOverlay a.becomeDealer span {
+    font-family: "proxima_nova_rgbold";
+  }
+
+  .alpGreenFtr {
+    background: #0192e2;
+    width: 100%;
+    color: #fff;
+    padding: 30px 0px;
+    font-size: 22px;
+    font-family: "proxima_nova_rgregular";
+    margin-top: -20px;
+    position: relative;
+    z-index: 99;
+  }
+  .alpGreenFtr .col-md-5 {
+    padding-top: 10px;
+  }
+  .alpGreenFtr span {
+    font-family: "proxima_nova_rgbold";
+  }
+  .alpGreenFtr a {
+    color: #fff;
+    letter-spacing: 3px;
+    font-family: "proxima_nova_rgbold";
+  }
+
+  .alpGreenFtr .crFtr {
+    margin-top: 30px;
+    border-top: 1px solid #69bff0;
+    text-align: center;
+  }
+  .alpGreenFtr .crFtr a.weblink {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: "proxima_nova_rgregular";
+    padding: 20px 0px 10px;
+    display: inline-block;
+    letter-spacing: 5px;
+  }
+  .alpGreenFtr ul.lpSocial {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .alpGreenFtr ul.lpSocial li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  .alpGreenFtr .fm1 {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .alpGreenFtr .fm2 {
+    clear: both;
+    display: block;
+    text-align: center;
+  }
+  .alpGreenFtr .fm3 {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+  .alpGreenFtr .fm4 {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: "proxima_nova_ththin";
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  section.module.parallax-ap {
+    background-image: url("/images/alp_pt2.jpg");
+  }
+  .alpGreenFtr .fm2 {
+    padding: 20px 0px;
+  }
+
+  svg#ftrCurve {
+    margin-top: -210px;
+    position: relative;
+    z-index: 99;
+  }
+  .profileDetails {
+    margin-left: 1%;
+    width: 100%;
+  }
+  .profileDetails h1 {
+    color: white;
+    text-align: left;
+  }
+  .profileCol {
+    display: flex;
+  }
+  .profileCol h4 {
+    padding: 2px 18px 2px 18px;
+    border-radius: 11px;
+    color: #096093;
+    background: white;
+  }
+
+  .phoneemail {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7f9dc3;
+  }
+  .seperator {
+    border-left: 2px solid #7f9dc3;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .profile-pic {
+    height: 120px;
+    width: 120px;
+    left: 2%;
+    z-index: 1001;
+    padding: 10px;
+  }
+  .profile-pic img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #c1c1c1;
+    cursor: pointer;
+    margin-top: -17%;
+    width: 100px;
+    height: 100px;
+  }
+  .profileCard {
+    display: inline-block;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+  }
+  .profileBlock {
+    background: #096093;
+    display: inline-flex;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .avatar-uploader > .ant-upload {
+    width: 136px;
+    height: 136px;
+  }
+  .ant-upload.ant-upload-drag {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0) !important;
+    border: 0px dashed #d9d9d9 !important;
+
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+  .ant-upload.ant-upload-drag .ant-upload {
+    padding: 0px !important;
+  }
+  @-ms-viewport {
+    width: device-width;
+  }
+
+  .stepsPage {
+  }
+  .stepsPage .headerStrip {
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.15);
+  }
+  .stepsPage .headerStrip h5.topContact {
+    padding-top: 15px;
+    text-align: right;
+    color: #242424;
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .headerStrip h5.topContact span.bld {
+    font-family: "proxima_nova_rgbold";
+    color: #1d8dbb;
+  }
+  a.logoutLink {
+    display: inline-block;
+    float: right;
+    color: #1d8dbb;
+    font-size: 16px;
+    background: url(/images/logout-icon.jpg) left center no-repeat;
+    padding-left: 30px;
+  }
+  .ipContainer {
+    margin-top: 120px;
+  }
+  .stepTabs {
+    position: relative;
+  }
+  .stepTabs::before {
+    content: "";
+    height: 100%;
+    width: 6px;
+    background: #39b3e6;
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 27px;
+    z-index: 8;
+  }
+  .stepTabs li {
+    margin-bottom: 20px;
+    z-index: 9;
+    position: relative;
+  }
+  .stepTabs span.stepCount {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 34px;
+    font-family: "proxima_nova_rgbold";
+    color: #39b3e6;
+    border-radius: 50%;
+    border: 2px solid #39b3e6;
+    background: #fff;
+    padding-top: 4px;
+  }
+  .stepTabs span.stepTitle {
+    font-size: 14px;
+    color: #a7a7a7;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+  .stepTabs li.active span.stepCount {
+    border: 2px solid #39b3e6;
+    background: #39b3e6;
+    color: #fff;
+  }
+  .stepTabs li.complete span.stepCount {
+    border: 2px solid #8fc320;
+    background: #8fc320;
+    color: #fff;
+  }
+
+  .stepHead {
+    background: #ebebeb;
+    padding: 5px 20px;
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+  }
+  .stepHead .shLeft {
+    width: 60%;
+    float: left;
+    text-align: left;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+  }
+  .stepHead .shRight {
+    width: 40%;
+    float: right;
+    text-align: right;
+    font-size: 14px;
+    line-height: 36px;
+  }
+  .stepHead::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+
+  .stepsPage ul.sitesGrid li {
+    display: inline-block;
+    width: 31.3%;
+  }
+
+  #desktopTabs {
+    display: block;
+  }
+  #mobileTabs {
+    display: none;
+  }
+
+  .stepFoot {
+    margin: 40px auto 20px;
+    display: block;
+    clear: both;
+    text-align: right;
+  }
+  .stepFoot button {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+  }
+  .stepFoot button.pbtn {
+    background: #ebebeb;
+    color: #111;
+  }
+  .stepFoot button.nbtn {
+    background: #1d8dbb;
+    color: #fff;
+  }
+  .subTitle {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #c3d7d7;
+  }
+  .detailTitle {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5%;
+    background: #428ea5;
+    color: white;
+  }
+  .formBlock {
+    margin-bottom: 30px;
+  }
+  .formBlock::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .formBlock input[type="text"] {
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .formBlock select {
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px; /* float:left; */
+  }
+  .formBlock input[type="tel"] {
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px; /* float:left; */
+  }
+  .formBlock input[type="date"] {
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 10px; /* float:left; */
+  }
+  .formBlock p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  p.warningNote {
+    background: #fbc8c8;
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 20px;
+    color: #ff0000;
+  }
+  .formBlock h5 {
+    color: #34b3e5;
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .dQ,
+  .hQ {
+    padding-left: 30px;
+    position: relative;
+    line-height: 24px;
+    clear: both;
+    display: block;
+  }
+  .dQ:before,
+  .hQ:before {
+    content: "Q";
+    display: inline-block;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    color: #39b3e6;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .dA {
+    clear: both;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .hA {
+    clear: both;
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px 0px 20px 30px;
+  }
+  .hA label {
+    margin-right: 50px;
+    text-transform: uppercase;
+  }
+  .formBlock textarea {
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 98%;
+    margin: 1%;
+  }
+  .heightWeight {
+    clear: both;
+    display: block;
+  }
+  .heightWeight input[type="text"] {
+    background: #f9f9f9;
+    border: 1px solid #ebebeb;
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 15%;
+    float: left;
+  }
+  .heightWeight span {
+    display: inline-block;
+    margin-right: 30px;
+    float: left;
+    line-height: 60px;
+  }
+  .heightWeight:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .formBlock .heightWeight input[type="text"] {
+    width: 68%;
+  }
+  h5.refTitle {
+    padding-top: 20px;
+    clear: both;
+    display: block;
+  }
+  h5.refTitle span {
+    background: #fff;
+    display: inline-block;
+    z-index: 9;
+    position: relative;
+    padding-right: 10px;
+  }
+  h5.refTitle::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #34b3e5;
+    clear: both;
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+  }
+
+  .paywithTab {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+  }
+  .paywithTab::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+  .paywithTab .paywith {
+    width: 30%;
+    float: left;
+    background: #f9f9f9;
+    border: 2px solid #ebebeb;
+    padding: 50px 15px;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+  }
+  .paywithTab .paywith img {
+    margin: 0 auto;
+  }
+  .paywithTab .paywith span {
+    clear: both;
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .paywithTab .paywith:hover {
+    background: #f2fcff;
+    border: 2px solid #069bdc;
+  }
+  .paywithTab .paywith.active {
+    background: #f2fcff;
+    border: 2px solid #069bdc;
+  }
+  .paywithTab .paywith.active::before {
+    content: "";
+    height: 40px;
+    width: 40px;
+    background: #fff url(/images/active-tick.jpg);
+    border-radius: 50%;
+    display: block;
+    clear: both;
+    position: absolute;
+    z-index: 99;
+    border: 2px solid #069bdc;
+    right: -15px;
+    top: -15px;
+  }
+  .payForms {
+  }
+  .pfLeft {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+  }
+  .pfLeft input[type="text"],
+  .pfLeft select {
+    width: 98%;
+  }
+  .pfLeft input[type="text"].col2F {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .payForms h5 span {
+    border: 2px solid #069bdc;
+    display: inline-block;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    color: #111;
+    font-weight: bold;
+    padding-top: 1px;
+  }
+
+  .pfRight {
+    width: 48%;
+    float: left;
+  }
+  .pfRight input[type="text"] {
+    width: 98%;
+  }
+  .pfLeft select.col2F {
+    width: 48%;
+    margin: 1%;
+  }
+  .pfLeft::after,
+  .pfRight::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+  .pfLeft input[type="text"].col2F {
+    width: 98%;
+  }
+
+  .sdHead {
+    text-align: center;
+  }
+  .sdHead h3 {
+    font-size: 70px;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    padding-top: 100px;
+  }
+  .sdHead h5 {
+    font-size: 30px;
+    color: #fff;
+    font-family: "proxima_nova_rgbold";
+    padding: 20px 0px;
+  }
+
+  .sdHead a {
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 0,
+      from(#fbbd04),
+      to(#fb9704)
+    );
+    background-image: -webkit-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -moz-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -o-linear-gradient(top, #fbbd04, #fb9704);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 20px;
+  }
+
+  .headTag {
+    background: #0192e2;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    display: inline-block;
+    clear: both;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 20px;
+  }
+  .siteWhat {
+  }
+  .siteWhat h3 {
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    color: #242424;
+    margin-bottom: 20px;
+  }
+  .siteWhat img {
+    width: 100%;
+    height: auto;
+  }
+  .siteWhy {
+    clear: both;
+    display: block;
+    margin: 60px auto;
+    width: 100%;
+    clear: both;
+    display: block;
+    background: #ebebeb;
+  }
+
+  .siteWhy .swLeft {
+    width: 50%;
+    float: left;
+    padding-left: 15%;
+    padding-top: 100px;
+  }
+  .siteWhy .swRight {
+    width: 50%;
+    float: left;
+  }
+  .siteWhy .swRight img {
+    width: 100%;
+    height: auto;
+  }
+  .siteWhy::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .siteWhy h3 {
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    color: #242424;
+    margin-bottom: 20px;
+  }
+
+  .siteWho h3 {
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    color: #242424;
+    margin-bottom: 20px;
+  }
+  .siteWho {
+    margin-bottom: 60px;
+  }
+
+  section.module.parallax-sd {
+    background-image: url("/images/htopbanner.jpg");
+  }
+  section.module.parallax {
+    height: 600px;
+  }
+  section.module.parallax .alp_ctaOverlay {
+    height: 600px;
+    background: rgba(0, 71, 133, 0.8);
+  }
+
+  .sdHighs {
+    padding-top: 100px;
+  }
+  .sdHighlights {
+    color: #fff;
+    font-size: 36px;
+    font-size: 30px;
+    font-family: "proxima_nova_rgbold";
+    border-bottom: 1px solid #fff;
+    padding: 20px 0px;
+  }
+  .sdHighlights span {
+    color: #ffba00;
+  }
+  .sdHighlightsLast {
+    border: none;
+  }
+  a.applyBtn {
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 0,
+      from(#fbbd04),
+      to(#fb9704)
+    );
+    background-image: -webkit-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -moz-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -o-linear-gradient(top, #fbbd04, #fb9704);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 50px;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 20px;
+  }
+
+  .profilePage .headerStrip {
+    background: rgba(255, 255, 255, 1);
+  }
+  .ppContainer {
+    position: relative;
+    margin-top: 80px;
+    padding-bottom: 260px;
+    background: #246196;
+  }
+  .ppcImage {
+    position: absolute;
+    width: calc(100% - 15px);
+    height: auto;
+  }
+  .ppcImage img {
+    width: 100%;
+    clear: both;
+    display: block;
+    height: auto;
+  }
+  .ppcOverlay {
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    padding-top: 70px;
+    background: rgba(0, 71, 133, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .ppcLeft {
+  }
+  .ppcLeft h4 {
+    font-size: 48px;
+    color: #fff;
+    text-align: left;
+  }
+  .ppcLeft h4 span {
+    color: #ffbe00;
+  }
+  .ppcLeft h4 span.bld {
+    font-family: "proxima_nova_rgbold";
+    color: #fff;
+  }
+  .ppcLeft p {
+    color: #5d9cd2;
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .ppcHL {
+    clear: both;
+    display: block;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 20px 40px;
+    text-align: center;
+    margin: 40px 0px 0px;
+  }
+  .ppcHL .sPlace {
+    font-size: 46px;
+    color: #121212;
+    font-family: "proxima_nova_rgbold";
+  }
+  .ppcHL .sDate {
+    font-size: 30px;
+    color: #747474;
+  }
+  .ppcHL .sPrice {
+    font-size: 24px;
+    color: #111;
+  }
+  .ppcHL .sPrice span {
+    font-family: "proxima_nova_rgbold";
+  }
+  .donateBtn {
+    background-image: -webkit-gradient(
+      linear,
+      0 0,
+      100% 0,
+      from(#fbbd04),
+      to(#fb9704)
+    );
+    background-image: -webkit-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -moz-linear-gradient(top, #fbbd04, #fb9704);
+    background-image: -o-linear-gradient(top, #fbbd04, #fb9704);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 20px;
+    margin-top: -70px;
+  }
+  .ppcLeft img {
+    width: 100%;
+    height: auto;
+  }
+  .ppContainer2 {
+    background: #246196;
+    padding-bottom: 160px;
+  }
+
+  ul.amountDetails {
+  }
+  ul.amountDetails li {
+    display: inline-block;
+    width: 46%;
+    margin: 2%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: "proxima_nova_rgbold";
+    border: 1px solid #5d9cd2;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  ul.amountDetails li span {
+    display: block;
+    clear: both;
+    color: #ffba00;
+    font-size: 20px;
+  }
+
+  .ppdBlock {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 30px;
+  }
+  .ppdBlock .cDetails {
+    background: #215d91;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    display: block;
+    clear: both;
+  }
+  .ppdBlock .cDetails::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .ppdBlock .cDetails .cLeft {
+    width: 66%;
+    float: left;
+    text-align: left;
+    padding: 2%;
+  }
+  .ppdBlock .cDetails .cRight {
+    width: 30%;
+    float: left;
+    padding-top: 60px;
+  }
+  .ppdBlock .cDetails .cLeft .cName {
+    font-size: 30px;
+    color: #fff;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 10px;
+  }
+  .ppdBlock .cDetails .cLeft .cTags span {
+    font-size: 20px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .ppdBlock .cDetails .cLeft .cContact {
+    font-size: 20px;
+    color: #92bfe5;
+    font-family: "proxima_nova_rgbold";
+    margin-top: 10px;
+  }
+
+  .ppdBlock .sDetails {
+    background: #ebebeb;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    display: block;
+    clear: both;
+  }
+  .ppdBlock .sDetails::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+  }
+  .ppdBlock .sDetails .sLeft {
+    width: 66%;
+    float: left;
+    text-align: left;
+    padding: 2%;
+  }
+  .ppdBlock .sDetails .sRight {
+    width: 30%;
+    float: left;
+    padding-top: 60px;
+  }
+  .ppdBlock .sDetails .sLeft .sName {
+    font-size: 22px;
+    color: #243b49;
+    font-family: "proxima_nova_rgbold";
+    margin-bottom: 10px;
+  }
+  .ppdBlock .sDetails .sLeft .sStatus {
+    font-size: 16px;
+    color: #747474;
+    margin-bottom: 10px;
+  }
+  .ppdBlock .sDetails .sLeft .sStatus span {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: #2bb648;
+    border-radius: 50%;
+  }
+  .sApplns {
+    overflow: auto;
+  }
+  .pBarBlock {
+    width: 80%;
+    float: left;
+  }
+  .pBarBlock .pBar {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .pBarBlock .pBar .theProgress {
+    height: 6px;
+    background: #2bb648;
+  }
+  .pBarLabel {
+    clear: both;
+    display: block;
+  }
+  .pblLeft {
+    width: 60%;
+    float: left;
+    color: #747474;
+    text-align: left;
+  }
+  .pblRight {
+    width: 40%;
+    float: left;
+    color: #111;
+    font-family: "proxima_nova_rgbold";
+    text-align: right;
+  }
+  .siteEdit {
+    width: 15%;
+    float: right;
+  }
+  .siteEdit i {
+    background: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    -webkit-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 2px 8px 1px rgba(0, 0, 0, 0.1);
+  }
+  .sOtherDetails {
+    clear: both;
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 1%;
+  }
+  .sOtherDetails ul li {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .uploadBlocks {
+    margin-bottom: 30px;
+    clear: both;
+    display: block;
+  }
+  .uploadBlocks .ubHead {
+    font-size: 24px;
+    color: #747474;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .uploadBlocks .disUpload {
+    border: 2px dashed #999;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: #666;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .uploadBlocks .enaUpload {
+    border: 2px solid #ebebeb;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    color: #111;
+    font-size: 18px;
+  }
+  .uploadBlocks .enaUpload .uName {
+    width: 80%;
+    float: left;
+    text-align: left;
+  }
+  .uploadBlocks .enaUpload .uName span {
+    color: #1d8dbb;
+  }
+  .uploadBlocks .enaUpload .uAction {
+    width: 20%;
+    float: left;
+    text-align: right;
+  }
+  .uploadBlocks .enaUpload::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    clear: both;
+    display: block;
+  }
+  .uploadBlocks .enaUpload i {
+    margin: 0px 10px;
+  }
+  .uploadAction {
+    text-align: right;
+    margin-bottom: 40px;
+  }
+  .prevBtn {
+    background: #ebebeb;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #111;
+    text-transform: uppercase;
+  }
+  .nextBtn {
+    background: #0192e2;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #111;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .ipContainer {
+      margin-top: 200px;
+    }
+
+    #desktopTabs {
+      display: none;
+    }
+    #mobileTabs {
+      display: block;
+      width: 100%;
+    }
+
+    .stepHead {
+      display: none;
+    }
+    .mshLeft {
+      width: 25%;
+      float: left;
+    }
+    .mshCenter {
+      width: 40%;
+      float: left;
+      font-family: "Playfair Display", serif;
+      padding-top: 20px;
+    }
+    .mshCenter h4 {
+      font-family: "Playfair Display", serif;
+    }
+    .mshRight {
+      width: 35%;
+      float: left;
+      padding-top: 20px;
+    }
+    .mshRight button {
+      text-align: center;
+      display: inline-block;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      border-radius: 40px;
+    }
+    .mshRight button.pbtn {
+      background: #ebebeb;
+      color: #111;
+    }
+    .mshRight button.nbtn {
+      background: #1d8dbb;
+      color: #fff;
+    }
+
+    .alpBanner {
+      height: auto;
+    }
+    .alpbOverLeft {
+      width: 100%;
+      float: left;
+      text-align: center;
+      padding-top: 0px;
+      background: rgba(0, 0, 0, 0.6);
+      height: auto;
+      padding: 20px 0px 40px;
+      color: #fff;
+    }
+    .alpWhythis {
+      padding-left: 0px;
+      margin-top: 0px;
+    }
+    .alpWhythis h4 {
+      font-size: 20px;
+    }
+    .alpbOverRight {
+      width: 100%;
+      float: left;
+      padding-top: 0px;
+      text-align: center;
+    }
+    .alprform {
+      width: 100%;
+      border-radius: 0px;
+    }
+    .alprform input[type="submit"] {
+      width: 100%;
+      border-radius: 40px;
+    }
+    .alprform a.downloadBrochure {
+      width: 100%;
+      border-radius: 0px 0px 10px 10px;
+      margin-top: -2px;
+    }
+
+    .alpbannerImg img {
+      width: auto;
+    }
+
+    .alp_ctaOverlay p.ptext {
+      width: 95%;
+      line-height: 30px;
+      font-size: 24px;
+    }
+    .alpGreenFtr a {
+      letter-spacing: 2px;
+      clear: both;
+      display: block;
+    }
+    /*****************************************************************************************************************/
+    .commercialLandingPage .headerStrip h1.logo {
+      text-align: center;
+    }
+    .commercialLandingPage .headerStrip h5.topContact {
+      padding-top: 10px;
+      font-size: 14px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    .alpBanner {
+      height: auto;
+    }
+    .alpbOverLeft {
+      width: 100%;
+      float: left;
+      text-align: center;
+      padding-top: 0px;
+      background: rgba(0, 0, 0, 0.6);
+      height: auto;
+      padding: 20px 0px 40px;
+      color: #fff;
+    }
+    .alpWhythis {
+      margin-top: 0px;
+      padding: 0 10%;
+    }
+    span.barrow {
+      display: none;
+    }
+    svg#ftrCurve {
+      margin-top: -50px;
+      position: relative;
+      z-index: 99;
+    }
+    .alp_intro {
+      text-align: center;
+    }
+    .alp_intro h3 {
+      text-align: center;
+    }
+    .alp_features h2,
+    .alp_testimonials h4 {
+      font-size: 30px;
+    }
+    .alprform h4 {
+      padding: 10px 0px;
+    }
+    .alpWhythis h5 {
+      width: 100%;
+    }
+    .alpWhythis p {
+      width: 100%;
+    }
+    .alpWhythis2 {
+      padding-left: 0px;
+      margin-top: 20px;
+    }
+    .alpWhythis h4 {
+      width: 100%;
+      margin-left: 0px;
+    }
+    .alpWhythis2 p.p1 {
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      padding-left: 0;
+    }
+    .alpWhythis2 p.p1 span {
+      clear: both;
+      display: block;
+      padding-top: 15px;
+    }
+    ul.sitesGrid li {
+      display: inline-block;
+      width: 98%;
+      margin-bottom: 20px;
+    }
+
+    /***********************************************************************************************************************/
+
+    .commercialLandingPage .headerStrip {
+      position: relative;
+    }
+    .alpbannerImg {
+      position: absolute;
+    }
+    .alpbannerImg::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      display: block;
+      clear: both;
+      position: absolute;
+      background: rgba(0, 71, 133, 0.77);
+    }
+    .alpbannerOver {
+      padding-top: 0px;
+      position: relative;
+    }
+    .alprform {
+      padding-bottom: 20px;
+      background: rgba(1, 146, 226, 1);
+    }
+    .alpbOverLeft {
+      background: rgba(0, 0, 0, 0);
+    }
+    .alp_intro img {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .headerStrip h1.logo {
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    .stepsPage .headerStrip h5.topContact {
+      text-align: center;
+      font-size: 16px;
+    }
+    .stepsPage .headerStrip {
+      padding-bottom: 10px;
+    }
+    .stepsPage ul.sitesGrid li {
+      display: inline-block;
+      width: 98%;
+      margin-bottom: 20px;
+    }
+
+    .formBlock {
+      margin-bottom: 30px;
+    }
+    .formBlock input[type="text"] {
+      width: 98%;
+      margin: 1%;
+      display: block;
+      clear: both;
+    }
+    .formBlock select {
+      width: 98%;
+      margin: 1%;
+      display: block;
+      clear: both;
+    }
+
+    .paywithTab .paywith {
+      width: 46%;
+      float: left;
+      background: #f9f9f9;
+      border: 2px solid #ebebeb;
+      border-radius: 4px;
+      text-align: center;
+      margin: 2%;
+      position: relative;
+      cursor: pointer;
+    }
+    .paywithTab .paywith img {
+      margin: 0 auto;
+      width: 90%;
+    }
+    .paywithTab .paywith span {
+      font-size: 10px;
+    }
+    .pfLeft,
+    .pfRight {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .sdHead {
+      text-align: center;
+      padding-top: 100px;
+    }
+    .sdHead h3 {
+      font-size: 24px;
+    }
+    .sdHead h5 {
+      font-size: 18px;
+      padding: 10px 0px;
+    }
+    .sdHead a {
+      padding: 10px 20px;
+    }
+    .siteWhy .swLeft {
+      width: 90%;
+      margin: 0 auto;
+      float: none;
+      padding-left: 0%;
+      padding-top: 20px;
+    }
+    .siteWhy .swRight {
+      width: 100%;
+      float: left;
+    }
+    .siteWho img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .sdHighs {
+      padding-top: 0px;
+    }
+
+    .ppContainer {
+      position: relative;
+      margin-top: 120px;
+    }
+    .ppcLeft h4 {
+      font-size: 24px;
+    }
+    .profilePage .headerStrip h5.topContact {
+      text-align: center;
+      font-size: 16px;
+    }
+    .ppcLeft p {
+      color: #5d9cd2;
+      text-align: left;
+      font-size: 16px;
+    }
+    .ppcImage img {
+      width: auto;
+      clear: both;
+      display: block;
+      height: auto;
+    }
+    .ppcHL .sPlace {
+      font-size: 24px;
+    }
+    .ppcHL .sDate {
+      font-size: 20px;
+    }
+    .ppcHL .sPrice {
+      font-size: 16px;
+    }
+    .ppcRight img {
+      width: 100%;
+      height: auto;
+    }
+    ul.amountDetails li {
+      display: block;
+      width: 96%;
+      margin: 20px auto;
+      float: none;
+    }
+    .ppContainer {
+      padding-bottom: 0;
+    }
+
+    .ppdBlock .cDetails .cLeft,
+    .ppdBlock .cDetails .cRight,
+    .ppdBlock .sDetails .sLeft {
+      width: 100%;
+    }
+    .ppdBlock .cDetails .cLeft .cTags span {
+      margin: 5px;
+    }
+    .ppdBlock .sDetails .sRight {
+      width: 100%;
+      float: left;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    .sOtherDetails ul li {
+      display: block;
+      width: 100%;
+    }
+    .uploadBlocks .enaUpload .uName,
+    .uploadBlocks .enaUpload .uAction {
+      width: 100%;
+    }
+    .uploadBlocks .ubHead {
+      font-size: 18px;
+    }
+    .uploadAction {
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1450px) and (min-width: 769px) {
+    #ftrCurve {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 1250px) and (min-width: 769px) {
+    .alpbannerImg {
+      position: absolute;
+    }
+    .alpbannerImg::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      display: block;
+      clear: both;
+      position: absolute;
+      background: rgba(0, 71, 133, 0.77);
+    }
+    .alpbannerOver {
+      padding-top: 0px;
+      position: relative;
+    }
+    .alprform {
+      padding-bottom: 20px;
+      background: rgba(1, 146, 226, 1);
+    }
+  }
+
+  .progress {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+  }
+  .progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress .progress-left {
+    left: 0;
+  }
+  .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 6px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+  }
+  .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+  }
+  .progress .progress-right {
+    right: 0;
+  }
+  .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+  }
+  .progress .progress-value {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 24px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+  }
+  .progress.blue .progress-bar {
+    border-color: #049dff;
+  }
+  .progress.blue .progress-left .progress-bar {
+    animation: loading-5 1.5s linear forwards 1.8s;
+  }
+
+  @keyframes loading-1 {
+    /*Step 7 */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes loading-3 {
+    /*Step  ???*/
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(144deg);
+      transform: rotate(144deg);
+    }
+  }
+
+  @keyframes loading-5 {
+    /*Step 6 */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(126deg);
+      transform: rotate(126deg);
+    }
+  }
+
+  @keyframes loading-4 {
+    /*Step 4 */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(36deg);
+      transform: rotate(36deg);
+    }
+  }
+
+  @keyframes loading-3 {
+    /*Step  */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes loading-2 {
+    /*Step  */
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+  }
+
+  @media only screen and (max-width: 990px) {
+    .progress {
+      margin-bottom: 20px;
+    }
+  }
+
+  .progress .progress-value {
+    line-height: 35px;
+    font-size: 12px;
+  }
+  .progress-value {
+    text-align: center;
+  }
+
+  .progress-value span {
+    font-size: 24px;
+    line-height: 0px;
+    display: block;
+    clear: both;
+    font-family: "proxima_nova_rgbold";
+  }
+
+  .react-tel-input {
+    margin-top: 10px !important;
+    height: 44px !important;
+    border-radius: 22px;
+  }
+  .react-tel-input .form-control {
+    width: 100% !important;
+    height: 44px !important;
+    border-radius: 22px !important;
+    padding-left: 66px !important;
+  }
+  .country-list {
+    color: #000;
+  }
+  .flag-dropdown {
+    margin-left: 23px !important;
+    border: 0 !important;
+    background: white !important;
+    height: 42px !important;
+    margin-top: 1px !important;
+  }
+
+  .formBlock .react-tel-input {
+    border-radius: 2px;
+  }
+  .formBlock .input {
+    padding: 0;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+    float: left;
+    border-radius: 2px !important;
+  }
+
+  .formBlock .input .react-tel-input {
+    margin: 0 !important;
+  }
+
+  .formBlock .input .react-tel-input .flag-dropdown {
+    background-color: rgba(0, 0, 0, 0) !important;
+    margin-top: 3px !important;
+    height: 38px !important;
+  }
+  .formBlock .input .react-tel-input input {
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 2px !important;
+  }
+}
